@@ -186,3 +186,40 @@ sliderContainer.addEventListener('mouseleave', function() {
     sliderContainer.style.animationPlayState = 'running';
 });
 
+
+// -----------------------------
+// Select elements
+const bar = document.querySelector('.bar');
+const navContact = document.querySelector('.nav-contact');
+const scrollTopButton = document.querySelector('.scroll-top-button');
+
+// Function to handle scroll events
+function handleScroll() {
+  // Check if the page is scrolled down
+  if (window.scrollY > 0) {
+    bar.classList.add('fixed-bar'); // Fix the bar at the top
+    navContact.classList.add('fixed-nav-contact'); // Fix the nav-contact at the bottom
+
+    // Show the scroll-to-top button when scrolled
+    navContact.classList.add('show-scroll-top');
+  } else {
+    bar.classList.remove('fixed-bar'); // Return the bar to its original position
+    navContact.classList.remove('fixed-nav-contact'); // Return nav-contact to its original position
+
+    // Hide the scroll-to-top button when at the top
+    navContact.classList.remove('show-scroll-top');
+  }
+}
+
+// Scroll to the top of the page when the button is clicked
+scrollTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Smooth scroll effect
+  });
+});
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
+
