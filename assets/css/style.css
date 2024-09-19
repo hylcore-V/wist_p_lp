@@ -20,7 +20,7 @@ a {
 
 /* Show just one 991px wide slide at a time */
 .carousel {
-  width: 100vw;
+  width: 100%;
   height: auto;
 }
 .carousel__slides,
@@ -256,6 +256,10 @@ header {
   bottom: 31rem;
   right: 45rem;
 }
+.fv-badge img {
+  width: 517rem;
+  height: auto;
+}
 
 /* main style */
 /* f-sec style */
@@ -473,7 +477,8 @@ header {
   padding-bottom: 36rem;
   background: #ffffff;
   clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25rem 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2),
+    0 6rem 20rem 0 rgba(0, 0, 0, 0.19);
 }
 
 .voice-pan > div {
@@ -726,11 +731,12 @@ header {
   outline: none;
 }
 .contact-item-textarea {
-  align-items: flex-start !important;}
-  .contact-item-check {
-    padding-bottom: 59rem;
-  }
-.contact-item-check>label {
+  align-items: flex-start !important;
+}
+.contact-item-check {
+  padding-bottom: 59rem;
+}
+.contact-item-check > label {
   opacity: 0;
 }
 .contact-item-textarea textarea {
@@ -865,11 +871,14 @@ footer {
   text-align: center;
   padding-top: 17rem;
   padding-bottom: 17rem;
+  display: flex;
+  align-items: center;
+  grid-area: 4rem;
+  justify-content: center;
 }
 .achiev {
   padding: 40px;
   background-color: #f8f9fa;
-
 }
 .achiev-ttl {
   text-align: center;
@@ -886,9 +895,7 @@ footer {
   margin-bottom: 20px;
 }
 
-
 /* ------------------------------- */
-
 
 .achiev-slide {
   position: relative;
@@ -906,7 +913,8 @@ footer {
   flex: 0 0 auto;
   background-color: #fff;
   margin-right: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2),
+    0 6rem 20rem 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   transition: transform 0.3s;
   padding: 0 30rem 30rem 30rem;
@@ -955,10 +963,232 @@ footer {
 
 /* --------------------------- */
 
+.f-sec-tri {
+  width: 324rem;
+  height: auto;
+}
+
+
+
+
 
 /* responsive part */
 @media (max-width: 1280px) {
   html {
     font-size: calc(100vw / 1280);
   }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 768);
+  }
+  .container {
+    padding-left: 84rem;
+    padding-right: 84rem;
+  }
+  .reason-grp {
+    flex-direction: column;
+    align-items: center;
+  }
+  .voice-grp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 35rem;
+}
+.contact-form {
+  position: relative;
+  margin-left: 0; 
+   margin-right: 0;
+  background: white;
+  padding: 66rem 75rem 132rem 75rem;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 23rem;
+  gap: 17rem;
+  flex-direction: column;
+}
+.contact-item input, .contact-item textarea {
+  width: 405rem;
+  border: none;
+  background: #e4e5e4;
+  font-size: 14rem;
+  height: 35rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+.contact-item-textarea textarea {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  height: 151rem;
+  width: 405rem !important;
+}
+.radio-grp {
+  width: fit-content;
+  display: flex;
+  gap: 20rem;
+  flex-direction: column;
+}
+.main-check {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 0 !important;
+}
+.contact-form button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 17rem;
+  background: var(--blue);
+  padding: 17rem 42rem;
+  border: none;
+}
+.f-sec-main {
+  padding-top: 53rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.about > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  flex-direction: column;
+}
+}
+@media (max-width: 425px) {
+  html {
+    font-size: calc(100vw / 425);
+  }
+  .container {
+    padding-left: 28rem;
+    padding-right: 28rem;
+  }
+  .f-sec-first > div {
+    background: #ffffff;
+    padding: 32rem 20rem 9rem 20rem;
+    border-radius: 10rem;
+    margin-left: 0;
+     margin-right: 0;
+}
+.f-sec-last .logo-bg {
+  padding-top: 26.4rem;
+  width: 357rem;
+  height: auto;
+}
+.reason-pan {
+  background: white;
+  padding: 26.5rem 22.5rem 36.5rem 23.5rem;
+  border-radius: 15rem;
+  width: 316rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.voice-pan > div {
+  padding-left: 26rem;
+  padding-right: 26rem;
+}
+.voice-pan {
+  position: relative;
+  overflow: hidden;
+  width: 374rem;
+  padding-top: 22rem;
+  padding-bottom: 36rem;
+  background: #ffffff;
+  clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
+  box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2), 0 6rem 20rem 0 rgba(0, 0, 0, 0.19);
+}
+.voice-ttl h3 {
+  padding-top: 31rem;
+  padding-bottom: 20rem;
+  text-align: center;
+}
+.slide-card img {
+  width: 309rem;
+  height: auto;
+  border-radius: 3rem;
+}
+.flow-pan p {
+  font-size: 16rem;
+  width: 100%;
+  color: #464646;
+}
+.flow-pan > div {
+  align-items: center;
+  display: flex;
+  width: 100% !important;
+}
+.flow-pan {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 34rem;
+  padding-top: 24rem;
+  padding-bottom: 24rem;
+  border-bottom: 1px solid var(--purple);
+  width: 100%;
+  flex-direction: column;
+}
+.contact-form {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  background: white;
+  padding: 66rem 20rem 132rem 20rem;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 23rem;
+  gap: 17rem;
+  flex-direction: column;
+}
+.contact-item input, .contact-item textarea {
+  width: 305rem;
+  border: none;
+  background: #e4e5e4;
+  font-size: 14rem;
+  height: 35rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+.contact-item-textarea textarea {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  height: 151rem;
+  width: 305rem !important;
+}
+.radio-grp {
+  width: fit-content;
+  display: flex;
+  gap: 20rem;
+  flex-direction: column;
+}
+.main-check {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 0 !important;
+}
+.contact-form button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 17rem;
+  background: var(--blue);
+  padding: 17rem 42rem;
+  border: none;
+}
 }
