@@ -150,7 +150,7 @@ header {
 
 .bar {
   margin-left: 45rem;
-  margin-right: 33rem;
+  margin-right: 21rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -175,6 +175,9 @@ header {
   color: white;
   text-decoration: none;
 }
+/* .fv-txt h1 {
+ z-index: 0;
+} */
 
 .nav-contact {
   display: flex;
@@ -243,6 +246,10 @@ header {
 .fixed-bar .logo img {
   padding-left: 30rem;
   filter: invert(1) brightness(0); /* This order ensures the logo color changes correctly */
+}
+.fixed-bar button img {
+  filter: invert(1) brightness(0); /* This order ensures the logo color changes correctly */
+
 }
 .fixed-bar .global-link ul {
   padding-right: 51rem;
@@ -324,7 +331,7 @@ header {
 
 /* fv txt style */
 .fv-txt {
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   top: 0;
   left: 66rem;
@@ -1080,7 +1087,9 @@ footer {
   width: 324rem;
   height: auto;
 }
-
+.sp-menu {
+  display: none;
+}
 /* responsive part */
 @media (max-width: 1280px) {
   html {
@@ -1091,9 +1100,110 @@ footer {
   html {
     font-size: calc(100vw / 768);
   }
+  .carousel__navdots {
+    display: none;
+  }
   .container {
     padding-left: 84rem;
     padding-right: 84rem;
+  }
+  .global-link {
+    display: none;
+  }
+  .carousel-wrapper {
+    height: auto;
+  }
+  .carousel__slide {
+    height: auto;
+  }
+  .sp-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sp-menu button {
+    padding-right: 16rem;
+    border: none;
+    background-color: unset;
+  }
+  .sp-menu button img {
+    width: 40rem;
+    height: auto;
+  }
+
+  .carousel__slide img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.fv-badge {
+  position: absolute;
+  bottom: 158rem;
+  right: 0;
+}
+.fv-badge  img{
+  width: 100vw;
+  height: auto;
+}
+  /* ---sp menu relative */
+  .sp-menu {
+    position: relative;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .dropdown-menu {
+    max-height: 0; /* Hidden by default */
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Smooth transition */
+    background: rgba(255, 255, 255, 0.9); /* Optional: adjust as needed */
+    position: absolute;
+    top: 50px; /* Adjust as needed to position below the button */
+    right: -21rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 200;
+  }
+  .dropdown-menu ul {
+
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+  .dropdown-menu li {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+  .dropdown-menu a {
+    font-size: 20rem;
+    text-decoration: none;
+    color: var(--black);
+  }
+  
+  .dropdown-menu.open {
+    max-height: 300px; /* Adjust height based on the content size */
+  }
+  
+
+
+
+
+
+
+  
+  .bar {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    width: 95%;
   }
   .reason-grp {
     flex-direction: column;
@@ -1216,6 +1326,45 @@ footer {
     padding-left: 28rem;
     padding-right: 28rem;
   }
+  .nav-contact {
+    display: flex;
+    width: 100%;
+    transition: all 0.3s ease;
+    flex-direction: column;
+}
+.nav-contact h4 {
+  margin: 0 0;
+  font-size: 32rem !important;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.nav-contact > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #8789c9;
+  padding: 21rem 0 15rem;
+}
+.fv-txt {
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  left: 21rem;
+  padding-top: 18vh;
+  color: white;
+}
+h1 {
+  font-size: 56.43rem;
+}
+.nav-contact > div {
+  width: 100%;
+}
+.fv-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
   .f-sec-first > div {
     background: #ffffff;
     padding: 32rem 20rem 9rem 20rem;

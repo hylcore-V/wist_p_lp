@@ -198,18 +198,25 @@ function handleScroll() {
   // Check if the page is scrolled down
   if (window.scrollY > 0) {
     bar.classList.add('fixed-bar'); // Fix the bar at the top
-    navContact.classList.add('fixed-nav-contact'); // Fix the nav-contact at the bottom
-
-    // Show the scroll-to-top button when scrolled
-    navContact.classList.add('show-scroll-top');
+    
+    // Only add the fixed-nav-contact class if the screen width is 768px or larger
+    if (window.innerWidth > 768) {
+      navContact.classList.add('fixed-nav-contact'); // Fix the nav-contact at the bottom
+      navContact.classList.add('show-scroll-top'); // Show the scroll-to-top button when scrolled
+    }
   } else {
     bar.classList.remove('fixed-bar'); // Return the bar to its original position
-    navContact.classList.remove('fixed-nav-contact'); // Return nav-contact to its original position
-
-    // Hide the scroll-to-top button when at the top
-    navContact.classList.remove('show-scroll-top');
+    
+    // Only remove the fixed-nav-contact class if the screen width is 768px or larger
+    if (window.innerWidth >= 768) {
+      navContact.classList.remove('fixed-nav-contact'); // Return nav-contact to its original position
+      navContact.classList.remove('show-scroll-top'); // Hide the scroll-to-top button when at the top
+    }
   }
 }
+
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
 
 // Scroll to the top of the page when the button is clicked
 scrollTopButton.addEventListener('click', () => {
@@ -219,7 +226,13 @@ scrollTopButton.addEventListener('click', () => {
   });
 });
 
-// Attach the scroll event listener
-window.addEventListener('scroll', handleScroll);
+// ------------------------ sp menu toggle
+// Select the menu toggle button and the dropdown menu
+const menuToggle = document.querySelector('.menu-toggle');
+const dropdownMenu = document.querySelector('.dropdown-menu');
 
-
+// Add click event listener to the menu toggle button
+menuToggle.addEventListener('click', () => {
+  // Toggle the 'open' class to show/hide the dropdown menu
+  dropdownMenu.classList.toggle('open');
+});
