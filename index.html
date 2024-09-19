@@ -559,7 +559,7 @@
           <h2>Contact & Inquiry</h2>
           <h3>お見積もり／お問い合わせ</h3>
         </div>
-        <div class="contact-form">
+        <form class="contact-form">
           <div class="contact-item">
             <label for="お名前 *">お名前 <span>*</span></label>
             <input type="text" />
@@ -586,7 +586,27 @@
             <label for="電話番号 *">電話番号 <span>*</span></label>
             <input type="text" />
           </div>
-          <!-- radio button grp -->
+          <div class="contact-item">
+            <label for="電話番号 *">ご相談事項<span>*</span></label>
+            <div class="radio-grp">
+              <div>
+                <input type="radio" name="select" id="select">
+                <label for="️店舗">️店舗</label>
+              </div>
+              <div>
+                <input type="radio" name="select" id="select">
+                <label for="️店舗">事務所・オフィス</label>
+              </div>
+              <div>
+                <input type="radio" name="select" id="select">
+                <label for="️店舗">️マンション・戸建て</label>
+              </div>
+              <div>
+                <input type="radio" name="select" id="select">
+                <label for="️店舗">️その他</label>
+              </div>
+            </div>
+          </div>
           <div class="contact-item">
             <label for="坪数 *">坪数 </label>
             <input type="text" />
@@ -597,20 +617,19 @@
           </div>
           <div class="contact-item contact-item-textarea">
             <label for="ご相談内容 *">ご相談内容 <span>*</span> </label>
-            <textarea name="ご相談内容" id=""></textarea>
-          </div>
-          <div class="contact-check contact-item">
-            <div></div>
-            <div class="main-check">
-              <input
-                type="checkbox"
-                name="プライバシーポリシーに同意する"
-                id=""
-              />
-              <p><a href="#">プライバシーポリシー</a>に同意する</p>
+            <div>
+              <textarea name="ご相談内容" id=""></textarea>
+              <div class="main-check">
+                <label class="custom-checkbox">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+                <p><a href="#">プライバシーポリシー</a>に同意する</p>
+              </div>
             </div>
           </div>
-        </div>
+          <button>確認画面へ</button>
+        </form>
       </section>
     </main>
     <footer>Copyright © 2024 ホームスタイリングのウィステリアプラス</footer>

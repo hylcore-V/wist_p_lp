@@ -403,7 +403,7 @@ header {
   padding-top: 116rem;
   padding-bottom: 98rem;
 }
-.about>div {
+.about > div {
   width: 457rem;
   display: flex;
   flex-direction: column;
@@ -427,7 +427,7 @@ header {
   color: var(--black);
   text-align: center;
 }
-.about >div>div {
+.about > div > div {
   color: var(--blue);
   font-size: 18rem;
   background-color: white;
@@ -465,17 +465,17 @@ header {
   justify-content: space-between;
   padding-top: 38rem;
 }
-.voice-pan { 
+.voice-pan {
   position: relative;
   overflow: hidden;
   width: 447rem;
   padding-top: 22rem;
   padding-bottom: 36rem;
   background: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25rem 0 rgba(0, 0, 0, 0.19);
 }
 
-.voice-pan>div {
+.voice-pan > div {
   padding-left: 35rem;
   padding-right: 48rem;
 }
@@ -486,13 +486,13 @@ header {
   align-items: end;
   gap: 37rem;
 }
-.voice-img-pan>img {
+.voice-img-pan > img {
   width: 68rem;
   height: auto;
 }
-.voice-img-pan>div img {
- width: 154rem;
- height: auto; 
+.voice-img-pan > div img {
+  width: 154rem;
+  height: auto;
 }
 .voice-img-pan h5 {
   font-size: 20rem;
@@ -506,7 +506,7 @@ header {
   margin-top: 5rem;
   padding-top: 15rem;
 }
-.voice-pan>h6 {
+.voice-pan > h6 {
   font-size: 16rem;
   color: white;
   background: var(--purple);
@@ -521,7 +521,7 @@ header {
 .voice-txt-pan span::before {
   content: "";
   position: absolute;
-  background: #FFEF98;
+  background: #ffef98;
   width: 100%;
   height: 8rem;
   bottom: -1rem;
@@ -565,7 +565,7 @@ header {
 .flow-pan:first-child {
   border-top: 1px solid var(--purple);
 }
-.flow-pan>div  {
+.flow-pan > div {
   align-items: center;
   display: flex;
   width: 33.2% !important;
@@ -591,16 +591,16 @@ header {
 .price {
   padding-top: 85rem;
   padding-bottom: 100rem;
-  background: #C7E3E8;
+  background: #c7e3e8;
 }
 .price-ttl {
   text-align: center;
-  color: #3D7A81;
+  color: #3d7a81;
   padding-bottom: 70rem;
 }
 .price-ttl h2 {
   font-size: 40rem;
-  font-weight:400;
+  font-weight: 400;
   padding-bottom: 0rem;
 }
 .price .empty-pan {
@@ -622,7 +622,7 @@ header {
 }
 .faq-ttl {
   padding-bottom: 6rem;
-  color: #3D7A81;
+  color: #3d7a81;
   text-align: center;
 }
 .faq-ttl h2 {
@@ -685,16 +685,19 @@ header {
   padding-bottom: 73rem;
 }
 .contact-ttl h2 {
-  font-size: 40rem;font-weight: 400 !important;
+  font-size: 40rem;
+  font-weight: 400 !important;
 }
 .contact-form {
+  position: relative;
   margin-left: 44rem;
   margin-right: 44rem;
   background: white;
-  padding: 66rem 75rem;
+  padding: 66rem 75rem 132rem 75rem;
 }
 .contact-item {
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
   padding-bottom: 23rem;
   gap: 17rem;
 }
@@ -705,12 +708,13 @@ header {
 .contact-item label span {
   color: red;
 }
-.contact-item input, .contact-item textarea {
+.contact-item input,
+.contact-item textarea {
   width: 534rem;
   border: none;
-  background: #E4E5E4;
+  background: #e4e5e4;
   font-size: 14rem;
-  height: 35rem;  
+  height: 35rem;
   padding-left: 12rem;
   padding-right: 12rem;
 }
@@ -722,22 +726,25 @@ header {
 }
 .contact-item-textarea {
   align-items: flex-start !important;
+  padding-bottom: 59rem;
 }
 .contact-item-textarea textarea {
   padding-top: 12rem;
   padding-bottom: 12rem;
   height: 151rem;
+  width: 508rem;
 }
 .contact-check input {
   width: 25rem !important;
   height: 25rem !important;
   border: none;
-  background-color: #E4E5E4;
+  background-color: #e4e5e4;
 }
 .main-check {
   display: flex;
   align-items: center;
   gap: 10rem;
+  margin-top: 42rem;
 }
 .main-check p {
   font-size: 15rem;
@@ -745,6 +752,93 @@ header {
 .main-check a {
   color: red;
 }
+.contact-item-textarea > div {
+  width: 534rem;
+}
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Create a custom checkbox using a span */
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+  width: 25rem; /* Set the custom width */
+  height: 25rem; /* Set the custom height */
+  background-color: #e4e5e4; /* Custom background color */
+  border: none; /* Remove the border */
+  border-radius: 4px; /* Optional, if you want rounded corners */
+  display: inline-block;
+  position: relative;
+}
+
+/* Customize the checkmark when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: var(--blue); /* Change the background color when checked */
+}
+
+.custom-checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark (the "tick") when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+  left: 8rem; /* Adjust for the new size */
+  top: 1rem; /* Adjust for the new size */
+  width: 8rem; /* Adjust the size of the tick */
+  height: 14rem; /* Adjust the size of the tick */
+  border: solid white;
+  border-width: 0 2rem 2rem 0;
+  transform: rotate(45deg);
+}
+.contact-form button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 17rem;
+  background: var(--blue);
+  padding: 17rem 70rem;
+  border: none;
+}
+.main-check label {
+  width: 25rem !important;
+}
+.radio-grp input {
+  width: 16rem !important;
+}
+.radio-grp > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.radio-grp label {
+  width: fit-content !important;
+}
+.radio-grp {
+  width: fit-content;
+  display: flex;
+  gap: 20rem;
+}
+
+/* footer */
+footer {
+  color: white;
+  font-size: 13rem;
+  background-color: var(--blue);
+  text-align: center;
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+}
+
 /* responsive part */
 @media (max-width: 1280px) {
   html {
