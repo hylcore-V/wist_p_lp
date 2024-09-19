@@ -220,9 +220,13 @@ header {
 
 .nav-contact h4 {
   margin: 0 0;
-  font-size: 28rem;
+  font-size: 24rem;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
+}
+.nav-contact > div:first-child {
+  background: #52838b;
+  padding: 16rem 0 16rem;
 }
 
 .nav-contact-last p {
@@ -249,7 +253,6 @@ header {
 }
 .fixed-bar button img {
   filter: invert(1) brightness(0); /* This order ensures the logo color changes correctly */
-
 }
 .fixed-bar .global-link ul {
   padding-right: 51rem;
@@ -293,9 +296,9 @@ header {
   text-align: center;
   border: 1px solid white;
   border-radius: 20rem;
- width: 40%;
- padding-top: 10rem;
- padding-bottom: 10rem;
+  width: 40%;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* Default state - hide the scroll-to-top button */
@@ -325,7 +328,6 @@ header {
   width: 15px;
   height: auto;
 }
-
 
 /* ------------- */
 
@@ -1136,28 +1138,28 @@ footer {
     object-position: center;
     width: 100%;
     height: 100vh;
-}
-.fv-badge {
-  position: absolute;
-  bottom: 158rem;
-  right: 0;
-}
-.fv-badge  img{
-  width: 100vw;
-  height: auto;
-}
+  }
+  .fv-badge {
+    position: absolute;
+    bottom: 158rem;
+    right: 0;
+  }
+  .fv-badge img {
+    width: 100vw;
+    height: auto;
+  }
   /* ---sp menu relative */
   .sp-menu {
     position: relative;
   }
-  
+
   .menu-toggle {
     background: none;
     border: none;
     cursor: pointer;
     padding: 10px;
   }
-  
+
   .dropdown-menu {
     max-height: 0; /* Hidden by default */
     overflow: hidden;
@@ -1175,7 +1177,6 @@ footer {
     z-index: 200;
   }
   .dropdown-menu ul {
-
     padding-top: 20rem;
     padding-bottom: 20rem;
   }
@@ -1188,18 +1189,11 @@ footer {
     text-decoration: none;
     color: var(--black);
   }
-  
+
   .dropdown-menu.open {
     max-height: 300px; /* Adjust height based on the content size */
   }
-  
 
-
-
-
-
-
-  
   .bar {
     padding-top: 20rem;
     padding-bottom: 20rem;
@@ -1331,40 +1325,65 @@ footer {
     width: 100%;
     transition: all 0.3s ease;
     flex-direction: column;
+  }
+  .nav-contact h4 {
+    margin: 0 0;
+    font-size: 32rem !important;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .nav-contact > div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8789c9;
+    padding: 14rem 0 14rem;
+  }
+  .fv-txt {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 21rem;
+    padding-top: 18vh;
+    color: white;
+  }
+  .nav-contact-last h4 {
+    font-size: 25rem !important;}
+    
+  h1 {
+    font-size: 56.43rem;
+  }
+  .nav-contact > div {
+    width: 100%;
+  }
+  .fv-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  /* .fixed-bar .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 200;
+  } */
+  .nav-contact p {
+    font-size: 17.5rem;
+    color: white;
+    margin: 0 0 5rem;
 }
-.nav-contact h4 {
-  margin: 0 0;
-  font-size: 32rem !important;
-  color: white;
-  font-family: "Roboto Condensed", sans-serif;
-}
-.nav-contact > div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #8789c9;
-  padding: 21rem 0 15rem;
-}
-.fv-txt {
-  z-index: 4;
-  position: absolute;
-  top: 0;
-  left: 21rem;
-  padding-top: 18vh;
-  color: white;
-}
-h1 {
-  font-size: 56.43rem;
-}
-.nav-contact > div {
-  width: 100%;
-}
-.fv-badge {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+
   .f-sec-first > div {
     background: #ffffff;
     padding: 32rem 20rem 9rem 20rem;
