@@ -472,6 +472,7 @@ header {
   padding-top: 22rem;
   padding-bottom: 36rem;
   background: #ffffff;
+  clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25rem 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -725,14 +726,18 @@ header {
   outline: none;
 }
 .contact-item-textarea {
-  align-items: flex-start !important;
-  padding-bottom: 59rem;
+  align-items: flex-start !important;}
+  .contact-item-check {
+    padding-bottom: 59rem;
+  }
+.contact-item-check>label {
+  opacity: 0;
 }
 .contact-item-textarea textarea {
   padding-top: 12rem;
   padding-bottom: 12rem;
   height: 151rem;
-  width: 508rem;
+  width: 534rem !important;
 }
 .contact-check input {
   width: 25rem !important;
@@ -829,6 +834,29 @@ header {
   gap: 20rem;
 }
 
+/* achievement style */
+.achiev {
+  padding-top: 81rem;
+  padding-bottom: 100rem;
+  background-image: url(../img/achiev-bg.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.achiev-ttl {
+  text-align: center;
+  padding-bottom: 42rem;
+}
+.achiev-ttl h2 {
+  font-weight: 400;
+  font-size: 40rem;
+  color: var(--blue);
+}
+.achiev-ttl h3 {
+  color: var(--blue);
+  font-size: 35rem;
+}
 /* footer */
 footer {
   color: white;
@@ -838,6 +866,95 @@ footer {
   padding-top: 17rem;
   padding-bottom: 17rem;
 }
+.achiev {
+  padding: 40px;
+  background-color: #f8f9fa;
+
+}
+.achiev-ttl {
+  text-align: center;
+}
+
+.achiev-ttl h2 {
+  font-size: 40rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.achiev-ttl h3 {
+  font-size: 35rem;
+  margin-bottom: 20px;
+}
+
+
+/* ------------------------------- */
+
+
+.achiev-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  animation: slide 10s linear infinite; /* Sliding animation */
+  transition: animation-play-state 0.5s;
+}
+
+.slide-card {
+  margin-bottom: 5rem;
+  flex: 0 0 auto;
+  background-color: #fff;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s;
+  padding: 0 30rem 30rem 30rem;
+  text-decoration: none;
+}
+
+.slide-card img {
+  width: 383rem;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.slide-card p {
+  width: fit-content;
+  text-decoration: none !important;
+  font-size: 20rem;
+  font-weight: bold;
+  background-color: var(--purple);
+  padding: 8rem 31rem;
+  color: white;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.slide-card h5 {
+  text-decoration: none !important;
+  font-size: 20rem;
+  color: var(--purple);
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+}
+
+/* Sliding animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-57%);
+  }
+}
+
+/* Hover effect */
+.slider-container:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+/* --------------------------- */
+
 
 /* responsive part */
 @media (max-width: 1280px) {

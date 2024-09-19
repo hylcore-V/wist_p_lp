@@ -171,3 +171,18 @@ carouselContainer.addEventListener("touchstart", () => stop());
 goto(0);
 markNavdot(0);
 slideWrapper.classList.add("smooth-scroll");
+
+
+// ------------------------------
+// Get the slider container
+const sliderContainer = document.querySelector('.slider-container');
+
+// Add event listeners to stop/resume the animation on hover
+sliderContainer.addEventListener('mouseenter', function() {
+    sliderContainer.style.animationPlayState = 'paused';
+});
+
+sliderContainer.addEventListener('mouseleave', function() {
+    sliderContainer.style.animationPlayState = 'running';
+});
+
