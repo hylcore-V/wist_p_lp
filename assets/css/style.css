@@ -1313,10 +1313,10 @@ footer {
     font-family: "Roboto Condensed", sans-serif;
   }
   .nav-contact > div:first-child div img {
-    width: 35rem;
+    width: 21rem;
   }
   .nav-contact > div > div img {
-    width: 39rem;
+    width: 27rem;
   }
   .nav-contact {
     width: 40%;
@@ -1333,6 +1333,22 @@ footer {
   footer {
     margin-bottom: 154rem;
   }
+  .fv-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.carousel__slide img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: calc(100vh - 136rem);
+}
+.fv-txt img {
+  width: 403rem;
+  height: auto;
+  padding-left: 20rem;
+}
 }
 @media (max-width: 425px) {
   html {
@@ -1342,15 +1358,59 @@ footer {
     padding-left: 28rem;
     padding-right: 28rem;
   }
+  .bar {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    width: 95%;
+}
+.fixed-bar {
+  padding: 14rem 0rem;
+  width: 100%;
+}
+.logo img {
+  scale: 80%;
+}
+.bar {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.fixed-bar .logo img {
+  padding-left: 0rem;
+  filter: invert(1) brightness(0);
+}
+.sp-menu button img {
+  width: 32rem;
+  height: auto;
+}
   .nav-contact {
     display: flex;
     width: 100%;
     transition: all 0.3s ease;
-    flex-direction: column;
   }
+  .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 200;
+}
   .nav-contact h4 {
     margin: 0 0;
-    font-size: 32rem !important;
+    font-size: 23rem !important;
     color: white;
     font-family: "Roboto Condensed", sans-serif;
   }
@@ -1360,7 +1420,7 @@ footer {
     flex-direction: column;
     align-items: center;
     background: #8789c9;
-    padding: 14rem 0 14rem;
+    padding: 16rem 0 16rem;
   }
   .fv-txt {
     z-index: 4;
@@ -1371,7 +1431,7 @@ footer {
     color: white;
   }
   .nav-contact-last h4 {
-    font-size: 25rem !important;}
+    font-size: 22rem !important;}
     
   h1 {
     font-size: 56.43rem;
@@ -1383,7 +1443,18 @@ footer {
     position: absolute;
     bottom: 0;
     right: 0;
-  }
+}
+.carousel__slide img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: calc(100vh - 78rem);
+}
+.fv-txt img {
+  width: 319rem;
+  height: auto;
+  padding-left: 20rem;
+}
   /* .fixed-bar .dropdown-menu {
     max-height: 0;
     overflow: hidden;
@@ -1401,7 +1472,7 @@ footer {
     z-index: 200;
   } */
   .nav-contact p {
-    font-size: 17.5rem;
+    font-size: 10.5rem;
     color: white;
     margin: 0 0 5rem;
 }
