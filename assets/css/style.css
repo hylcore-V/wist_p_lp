@@ -178,6 +178,10 @@ header {
 /* .fv-txt h1 {
  z-index: 0;
 } */
+ .fv-txt img {
+  width: 380rem;
+  height: auto;
+ }
 
 .nav-contact {
   display: flex;
@@ -191,12 +195,13 @@ header {
   flex-direction: column;
   align-items: center;
   background: #8789c9;
-  padding: 23rem 0 25rem;
+  padding: 15rem 0 15rem;
+  justify-content: center;
 }
 
 .nav-contact > div:first-child {
   background: #52838b;
-  padding: 26rem 0 26rem;
+  padding: 15rem 0 15rem;
 }
 
 .nav-contact > div > div {
@@ -756,6 +761,11 @@ header {
 .faq {
   padding-top: 86rem;
   padding-bottom: 100rem;
+  background-image: url(../img/faq-bg.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .faq-ttl {
   padding-bottom: 6rem;
@@ -767,7 +777,10 @@ header {
   font-size: 40rem;
 }
 .faq-pan {
-  padding-top: 96rem;
+  margin-top: 32rem;
+  padding: 33rem;
+  background-color: white;
+  border-radius: 12rem;
 }
 .faq-q {
   display: flex;
