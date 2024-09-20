@@ -792,6 +792,12 @@ header {
   padding-bottom: 21rem;
   border-bottom: 1px solid var(--purple);
 }
+.sp-show {
+  display: none;
+}
+.sp-hidden {
+  display: block;
+}
 .faq-q h4 {
   color: white;
   background: var(--purple);
@@ -1382,6 +1388,10 @@ footer {
     width: 100%;
     transition: all 0.3s ease;
   }
+  .voice-ttl h3 .sp-show-part {
+    display: flex;
+    align-items: center;
+  }
   .fixed-bar .logo img {
     padding-left: 0rem;
     filter: invert(1) brightness(0);
@@ -1400,6 +1410,11 @@ footer {
     width: 100%;
     transition: all 0.3s ease;
   }
+  .ttl-part h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .dropdown-menu {
     max-height: 0;
     overflow: hidden;
@@ -1415,6 +1430,12 @@ footer {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     z-index: 200;
+  }
+  .sp-show {
+    display: block;
+  }
+  .sp-hidden {
+    display: none;
   }
   .nav-contact h4 {
     margin: 0 0;
