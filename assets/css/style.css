@@ -1188,7 +1188,7 @@ footer {
     transition: max-height 0.3s ease-out; /* Smooth transition */
     background: rgba(255, 255, 255, 0.9); /* Optional: adjust as needed */
     position: absolute;
-    top: 50px; /* Adjust as needed to position below the button */
+    top: 80rem; /* Adjust as needed to position below the button */
     right: -21rem;
     width: 100vw;
     display: flex;
@@ -1398,7 +1398,7 @@ footer {
     transition: max-height 0.3s ease-out;
     background: rgba(255, 255, 255, 0.9);
     position: absolute;
-    top: 50px;
+    top: 66rem;
     right: 0;
     width: 100vw;
     display: flex;
