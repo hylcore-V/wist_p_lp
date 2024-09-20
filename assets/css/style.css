@@ -461,6 +461,13 @@ header {
 .reason-ttl h3 {
   text-align: center;
   color: white;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+}
+.reason-ttl h2 {
+  font-weight: 400;
+}
+.reason-ttl h3 {
+  letter-spacing: 4rem;
 }
 .reason-ttl {
   margin-bottom: 54rem;
@@ -487,7 +494,7 @@ header {
   color: var(--blue);
   text-align: center;
   font-size: 22rem;
-  padding-top: 32rem;
+  padding-top: 17rem;
   padding-bottom: 20rem;
 }
 .reason-pan p {
@@ -582,6 +589,8 @@ header {
 .voice-ttl h3 {
   padding-top: 31rem;
   padding-bottom: 20rem;
+  
+  text-align: center;
 }
 .voice-ttl h2 {
   font-weight: 400;
