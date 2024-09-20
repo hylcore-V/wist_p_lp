@@ -1387,6 +1387,11 @@ footer {
   width: 32rem;
   height: auto;
 }
+.f-sec-last h4 {
+  font-size: 23rem;
+  color: var(--blue);
+  padding-top: 17rem;
+}
   .nav-contact {
     display: flex;
     width: 100%;
@@ -1486,7 +1491,7 @@ footer {
   }
   .f-sec-last .logo-bg {
     padding-top: 26.4rem;
-    width: 357rem;
+    width: 331rem;
     height: auto;
   }
   .reason-pan {
