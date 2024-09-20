@@ -1070,8 +1070,7 @@ footer {
   flex: 0 0 auto;
   background-color: #fff;
   margin-right: 20px;
-  box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2),
-    0 6rem 20rem 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.08), 0 1rem 1rem 0 rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   transition: transform 0.3s;
   padding: 0 30rem 30rem 30rem;
