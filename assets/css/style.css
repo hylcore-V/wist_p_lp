@@ -1388,6 +1388,12 @@ footer {
     width: 100%;
     transition: all 0.3s ease;
   }
+  .f-sec-main .wow {
+    scale: 85%;
+  }
+  .f-sec-main {
+    padding-top: 31rem;
+}
   .voice-ttl h3 .sp-show-part {
     display: flex;
     align-items: center;
