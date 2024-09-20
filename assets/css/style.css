@@ -1057,8 +1057,12 @@ footer {
 
 .slider-container {
   display: flex;
-  animation: slide 10s linear infinite; /* Sliding animation */
-  transition: animation-play-state 0.5s;
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none; 
+  overflow-y: auto;
+}
+.slider-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and newer Edge */
 }
 
 .slide-card {
@@ -1072,6 +1076,8 @@ footer {
   transition: transform 0.3s;
   padding: 0 30rem 30rem 30rem;
   text-decoration: none;
+  animation: slide 10s linear infinite; /* Sliding animation */
+  transition: animation-play-state 0.5s;
 }
 
 .slide-card img {
@@ -1105,7 +1111,7 @@ footer {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-57%);
+    transform: translateX(-60%);
   }
 }
 
