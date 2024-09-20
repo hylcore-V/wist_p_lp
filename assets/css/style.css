@@ -19,9 +19,12 @@ a {
 /* ------------------start FV carousel style */
 
 /* Show just one 991px wide slide at a time */
+footer {
+  margin-bottom: 100rem;
+}
 .carousel {
   width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 .carousel__slides,
 .carousel__slide {
@@ -45,7 +48,7 @@ a {
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 .carousel__slides.smooth-scroll {
   scroll-behavior: smooth;
