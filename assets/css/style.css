@@ -242,7 +242,9 @@ header {
   font-size: 15rem;
   font-weight: bold;
 }
-
+.sp-button {
+  transition: all 0.3s ease; 
+}
 /* New CSS for Fixed Positioning */
 .fixed-bar {
   position: fixed;
@@ -1366,6 +1368,9 @@ footer {
     width: 403rem;
     height: auto;
     padding-left: 20rem;
+  }
+  .sp-button:hover {
+    background-color: #39555b !important;
   }
 }
 @media (max-width: 425px) {
