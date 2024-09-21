@@ -165,6 +165,19 @@ header {
   width: 170rem;
   height: auto;
 }
+.nav-contact>div {
+  cursor: pointer;
+}
+.nav-contact-last {
+  transition: all 0.3s ease; 
+}
+.nav-contact-last:hover {
+  background-color: #4e51a3;
+}
+.sp-button h4 {
+  text-decoration: none;
+  color: white;
+}
 
 .global-link ul {
   display: flex;
