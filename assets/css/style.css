@@ -223,7 +223,7 @@ header {
 .nav-contact p {
   font-size: 12.5rem;
   color: white;
-  margin: 0 0 5rem;
+  margin: 2.5rem 0 2.5rem;
 }
 
 .nav-contact h4 {
@@ -299,14 +299,14 @@ header {
   align-items: center;
   width: 40%;
   padding: 17rem 0 17rem !important;
+  border-radius: 6.3rem;
 }
 .fixed-nav-contact p {
   text-align: center;
   border: 1px solid white;
   border-radius: 20rem;
   width: 40%;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 10rem 15rem;
 }
 
 /* Default state - hide the scroll-to-top button */
@@ -706,6 +706,10 @@ header {
   padding-bottom: 24rem;
   border-bottom: 1px solid var(--purple);
   width: 100%;
+}
+.pc-part {
+  display: flex;
+  align-items: center;
 }
 .flow-pan:first-child {
   border-top: 1px solid var(--purple);
@@ -1639,5 +1643,20 @@ footer {
     background: var(--blue);
     padding: 17rem 42rem;
     border: none;
+  }
+  .reason-ttl>h3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sp-part {
+    display: flex;
+    align-items: center;
+  }
+  .sp-part {
+   font-size: 32rem;
+  }
+  .pc-part {
+    justify-content: center;
   }
 }
